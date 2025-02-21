@@ -1,5 +1,5 @@
-#include "Config.h"
-#include "Entity.h"
+#include "Config.hpp"
+#include "Entity.hpp"
 #include "raylib.h"
 #pragma once
 

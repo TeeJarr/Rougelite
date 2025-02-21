@@ -208,30 +208,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/raylibCpp.o: src/raylibCpp.cpp.o
-.PHONY : src/raylibCpp.o
-
-# target to build an object file
-src/raylibCpp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/src/raylibCpp.cpp.o
-.PHONY : src/raylibCpp.cpp.o
-
-src/raylibCpp.i: src/raylibCpp.cpp.i
-.PHONY : src/raylibCpp.i
-
-# target to preprocess a source file
-src/raylibCpp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/src/raylibCpp.cpp.i
-.PHONY : src/raylibCpp.cpp.i
-
-src/raylibCpp.s: src/raylibCpp.cpp.s
-.PHONY : src/raylibCpp.s
-
-# target to generate assembly for a file
-src/raylibCpp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/src/raylibCpp.cpp.s
-.PHONY : src/raylibCpp.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -251,9 +227,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/raylibCpp.o"
-	@echo "... src/raylibCpp.i"
-	@echo "... src/raylibCpp.s"
 .PHONY : help
 
 

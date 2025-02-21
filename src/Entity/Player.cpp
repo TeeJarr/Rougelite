@@ -1,5 +1,5 @@
-#include "Player.h"
-#include "Config.h"
+#include "Player.hpp"
+#include "Config.hpp"
 #include "raylib.h"
 
 Player::Player()

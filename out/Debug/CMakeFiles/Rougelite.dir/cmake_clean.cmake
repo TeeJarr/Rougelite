@@ -5,8 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o.d"
   "CMakeFiles/Rougelite.dir/src/main.cpp.o"
   "CMakeFiles/Rougelite.dir/src/main.cpp.o.d"
-  "CMakeFiles/Rougelite.dir/src/raylibCpp.cpp.o"
-  "CMakeFiles/Rougelite.dir/src/raylibCpp.cpp.o.d"
   "Rougelite"
   "Rougelite.pdb"
 )

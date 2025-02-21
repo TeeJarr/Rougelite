@@ -1,6 +1,6 @@
-#include "Config.h"
-#include "Entity.h"
-#include "Player.h"
+#include "Config.hpp"
+#include "Entity.hpp"
+#include "Player.hpp"
 #include "raylib.h"
 
 void Update();
