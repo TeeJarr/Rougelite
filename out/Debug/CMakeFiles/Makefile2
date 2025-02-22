@@ -85,12 +85,12 @@ clean: CMakeFiles/Rougelite.dir/clean
 CMakeFiles/Rougelite.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=1,2,3,4 "Built target Rougelite"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target Rougelite"
 .PHONY : CMakeFiles/Rougelite.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Rougelite.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Rougelite.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles 0
 .PHONY : CMakeFiles/Rougelite.dir/rule
@@ -102,7 +102,7 @@ Rougelite: CMakeFiles/Rougelite.dir/rule
 # codegen rule for target.
 CMakeFiles/Rougelite.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target Rougelite"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target Rougelite"
 .PHONY : CMakeFiles/Rougelite.dir/codegen
 
 # clean rule for target.

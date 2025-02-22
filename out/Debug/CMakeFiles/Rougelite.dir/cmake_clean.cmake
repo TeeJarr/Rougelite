@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o"
+  "CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o.d"
   "CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o"
   "CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o.d"
   "CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o"

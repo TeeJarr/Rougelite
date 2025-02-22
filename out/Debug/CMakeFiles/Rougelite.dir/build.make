@@ -72,10 +72,24 @@ include CMakeFiles/Rougelite.dir/flags.make
 CMakeFiles/Rougelite.dir/codegen:
 .PHONY : CMakeFiles/Rougelite.dir/codegen
 
+CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o: CMakeFiles/Rougelite.dir/flags.make
+CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o: /Users/tristanreynolds/Code/games/rougelite/src/Entity/Block.cpp
+CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o: CMakeFiles/Rougelite.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o -MF CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o.d -o CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o -c /Users/tristanreynolds/Code/games/rougelite/src/Entity/Block.cpp
+
+CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tristanreynolds/Code/games/rougelite/src/Entity/Block.cpp > CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.i
+
+CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tristanreynolds/Code/games/rougelite/src/Entity/Block.cpp -o CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.s
+
 CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o: CMakeFiles/Rougelite.dir/flags.make
 CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o: /Users/tristanreynolds/Code/games/rougelite/src/Entity/Entity.cpp
 CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o: CMakeFiles/Rougelite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o -MF CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o.d -o CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o -c /Users/tristanreynolds/Code/games/rougelite/src/Entity/Entity.cpp
 
 CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.s: cmake_force
 CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o: CMakeFiles/Rougelite.dir/flags.make
 CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o: /Users/tristanreynolds/Code/games/rougelite/src/Entity/Player.cpp
 CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o: CMakeFiles/Rougelite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o -MF CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o.d -o CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o -c /Users/tristanreynolds/Code/games/rougelite/src/Entity/Player.cpp
 
 CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.s: cmake_force
 CMakeFiles/Rougelite.dir/src/main.cpp.o: CMakeFiles/Rougelite.dir/flags.make
 CMakeFiles/Rougelite.dir/src/main.cpp.o: /Users/tristanreynolds/Code/games/rougelite/src/main.cpp
 CMakeFiles/Rougelite.dir/src/main.cpp.o: CMakeFiles/Rougelite.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Rougelite.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Rougelite.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Rougelite.dir/src/main.cpp.o -MF CMakeFiles/Rougelite.dir/src/main.cpp.o.d -o CMakeFiles/Rougelite.dir/src/main.cpp.o -c /Users/tristanreynolds/Code/games/rougelite/src/main.cpp
 
 CMakeFiles/Rougelite.dir/src/main.cpp.i: cmake_force
@@ -116,6 +130,7 @@ CMakeFiles/Rougelite.dir/src/main.cpp.s: cmake_force
 
 # Object files for target Rougelite
 Rougelite_OBJECTS = \
+"CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o" \
 "CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o" \
 "CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o" \
 "CMakeFiles/Rougelite.dir/src/main.cpp.o"
@@ -123,13 +138,14 @@ Rougelite_OBJECTS = \
 # External object files for target Rougelite
 Rougelite_EXTERNAL_OBJECTS =
 
+Rougelite: CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o
 Rougelite: CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o
 Rougelite: CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o
 Rougelite: CMakeFiles/Rougelite.dir/src/main.cpp.o
 Rougelite: CMakeFiles/Rougelite.dir/build.make
 Rougelite: /opt/homebrew/Cellar/raylib/5.5/lib/libraylib.dylib
 Rougelite: CMakeFiles/Rougelite.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Rougelite"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Rougelite"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Rougelite.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

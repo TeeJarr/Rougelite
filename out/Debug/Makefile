@@ -136,6 +136,30 @@ Rougelite/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/build
 .PHONY : Rougelite/fast
 
+src/Entity/Block.o: src/Entity/Block.cpp.o
+.PHONY : src/Entity/Block.o
+
+# target to build an object file
+src/Entity/Block.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o
+.PHONY : src/Entity/Block.cpp.o
+
+src/Entity/Block.i: src/Entity/Block.cpp.i
+.PHONY : src/Entity/Block.i
+
+# target to preprocess a source file
+src/Entity/Block.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.i
+.PHONY : src/Entity/Block.cpp.i
+
+src/Entity/Block.s: src/Entity/Block.cpp.s
+.PHONY : src/Entity/Block.s
+
+# target to generate assembly for a file
+src/Entity/Block.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.s
+.PHONY : src/Entity/Block.cpp.s
+
 src/Entity/Entity.o: src/Entity/Entity.cpp.o
 .PHONY : src/Entity/Entity.o
 
@@ -218,6 +242,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Rougelite"
+	@echo "... src/Entity/Block.o"
+	@echo "... src/Entity/Block.i"
+	@echo "... src/Entity/Block.s"
 	@echo "... src/Entity/Entity.o"
 	@echo "... src/Entity/Entity.i"
 	@echo "... src/Entity/Entity.s"

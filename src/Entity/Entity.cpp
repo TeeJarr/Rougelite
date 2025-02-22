@@ -28,3 +28,7 @@ void Entity::SetEntitySize(Vector2 newSize)
 }
 
 void Entity::Draw() { DrawRectangle(EntityPos.x, EntityPos.y, EntitySize.x, EntitySize.y, RED); }
+
+Rectangle Entity::GetRect() const { return Rectangle{EntityPos.x, EntityPos.y, EntitySize.x, EntitySize.y}; }
+
+bool Entity::Collisions(Rectangle player, Rectangle obstacle) { return CheckCollisionRecs(player, obstacle); }
