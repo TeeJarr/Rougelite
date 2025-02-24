@@ -1,22 +1,53 @@
 #include "Player.hpp"
 #include "Config.hpp"
 #include "raylib.h"
+#include <iostream>
+#include <vector>
 
 Player::Player()
 {
     SetEntityPos(playerSpawnLocation);
     SetEntitySize(playerSize);
 }
-void Player::Move()
+
+void Player::Move(const std::vector<Block> obstacles)
 {
+    Vector2 oldPos = EntityPos;
+    Vector2 newPos = EntityPos;
+
+    bool isColliding = false;
+
     if (IsKeyDown(KEY_LEFT))
-        EntityPos.x -= playerSpeed;
+        newPos.x -= playerSpeed;
     if (IsKeyDown(KEY_RIGHT))
-        EntityPos.x += playerSpeed;
+        newPos.x += playerSpeed;
     if (IsKeyDown(KEY_UP))
-        EntityPos.y -= playerSpeed;
+        newPos.y -= playerSpeed;
     if (IsKeyDown(KEY_DOWN))
-        EntityPos.y += playerSpeed;
+        newPos.y += playerSpeed;
+
+    for (const auto &obstacle : obstacles)
+    {
+        if (CheckCollisionRecs(Rectangle{newPos.x, newPos.y, playerSize.x, playerSize.y}, obstacle.GetRect()))
+        {
+            isColliding = true;
+            break;
+        }
+    }
+
+    std::cout << isColliding << std::endl;
+
+    if (!isColliding)
+    {
+        EntityPos.x = newPos.x;
+        EntityPos.y = newPos.y;
+    }
+    // else
+    // {
+    //     EntityPos.x = oldPos.x;
+    //     EntityPos.y = oldPos.y;
+    // }
+
     CollisionCheck();
 }
 

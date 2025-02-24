@@ -1,3 +1,4 @@
+#include "Block.hpp"
 #include "Config.hpp"
 #include "Entity.hpp"
 #include "raylib.h"
@@ -7,10 +8,12 @@ class Player : public Entity
 {
   public:
     Player();
-    void Move();
+    void Move(std::vector<Block> obstacles);
     void Attack();
     void SetHP();
     void SetMana();
+    int ControlPlayerSpeed(bool isColliding);
+    int GetPlayerSpeed();
 
   private:
     // Player Logic Functions
