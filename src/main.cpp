@@ -12,8 +12,6 @@ Player player;
 Block obstacle;
 Block obstacle2;
 
-bool isColliding;
-
 std::vector<Block> obstacleVector;
 
 int main()
@@ -28,6 +26,7 @@ int main()
 
     obstacleVector.push_back(obstacle);
     obstacleVector.push_back(obstacle2);
+
     while (!WindowShouldClose())
     {
         GameTick();
@@ -43,12 +42,7 @@ void GameTick()
     Draw();
 }
 
-void Update()
-{
-    isColliding = player.Collisions(player.GetRect(), obstacle.GetRect());
-    player.Move(obstacleVector);
-    // std::cout << isColliding << std::endl;
-}
+void Update() { player.Move(obstacleVector); }
 
 void Draw()
 {
@@ -57,9 +51,5 @@ void Draw()
     obstacle.Draw();
     obstacle2.Draw();
     player.Draw();
-    if (isColliding)
-    {
-        DrawRectangleLinesEx(player.GetRect(), 2, WHITE);
-    }
     EndDrawing();
 }

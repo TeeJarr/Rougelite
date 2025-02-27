@@ -10,6 +10,33 @@ Player::Player()
     SetEntitySize(playerSize);
 }
 
+// int MaxAttackStage = 24;
+//
+// void Player::Attack(int AttackStage)
+// {
+//
+//     if (AttackStage <= 7 && AttackStage >= 0)
+//     {
+//         ++AttackStage;
+//         Attack(AttackStage);
+//     }
+//     else if (AttackStage > 7 && AttackStage <= 18)
+//     {
+//         // TODO add logiic to create hitbox
+//         ++AttackStage;
+//         Attack(AttackStage);
+//     }
+//     else if (AttackStage > 18 && AttackStage < MaxAttackStage)
+//     {
+//         // TODO impliment end lag frames
+//         ++AttackStage;
+//     }
+//     else if (AttackStage == MaxAttackStage)
+//     {
+//         AttackStage = 0;
+//     }
+// }
+
 void Player::Move(const std::vector<Block> obstacles)
 {
     Vector2 oldPos = EntityPos;

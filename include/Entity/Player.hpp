@@ -9,11 +9,9 @@ class Player : public Entity
   public:
     Player();
     void Move(std::vector<Block> obstacles);
-    void Attack();
+    void Attack(int AttackStage);
     void SetHP();
     void SetMana();
-    int ControlPlayerSpeed(bool isColliding);
-    int GetPlayerSpeed();
 
   private:
     // Player Logic Functions

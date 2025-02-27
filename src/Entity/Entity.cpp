@@ -27,7 +27,7 @@ void Entity::SetEntitySize(Vector2 newSize)
     EntitySize.y = newSize.y;
 }
 
-void Entity::Draw() { DrawRectangle(EntityPos.x, EntityPos.y, EntitySize.x, EntitySize.y, RED); }
+void Entity::Draw() { DrawRectangle(EntityPos.x, EntityPos.y, EntitySize.x, EntitySize.y, WHITE); }
 
 Rectangle Entity::GetRect() const { return Rectangle{EntityPos.x, EntityPos.y, EntitySize.x, EntitySize.y}; }
 
