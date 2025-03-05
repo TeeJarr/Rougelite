@@ -69,12 +69,6 @@ void Player::Move(const std::vector<Block> obstacles)
         EntityPos.x = newPos.x;
         EntityPos.y = newPos.y;
     }
-    // else
-    // {
-    //     EntityPos.x = oldPos.x;
-    //     EntityPos.y = oldPos.y;
-    // }
-
     CollisionCheck();
 }
 

@@ -1,26 +1,32 @@
 [
 {
-  "directory": "/Users/tristanreynolds/Code/games/rougelite/out/Debug",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/tristanreynolds/Code/games/rougelite/src -I/Users/tristanreynolds/Code/games/rougelite/include -I/Users/tristanreynolds/Code/games/rougelite/include/Entity -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o -c /Users/tristanreynolds/Code/games/rougelite/src/Entity/Block.cpp",
-  "file": "/Users/tristanreynolds/Code/games/rougelite/src/Entity/Block.cpp",
+  "directory": "/home/teejarr/Code/games/Rougelite/out/Debug",
+  "command": "/usr/bin/c++  -I/home/teejarr/Code/games/Rougelite/src -I/home/teejarr/Code/games/Rougelite/include -I/home/teejarr/Code/games/Rougelite/include/Entity -I/home/teejarr/Code/games/Rougelite/include/UI -g -std=gnu++17 -o CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o -c /home/teejarr/Code/games/Rougelite/src/Entity/Block.cpp",
+  "file": "/home/teejarr/Code/games/Rougelite/src/Entity/Block.cpp",
   "output": "CMakeFiles/Rougelite.dir/src/Entity/Block.cpp.o"
 },
 {
-  "directory": "/Users/tristanreynolds/Code/games/rougelite/out/Debug",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/tristanreynolds/Code/games/rougelite/src -I/Users/tristanreynolds/Code/games/rougelite/include -I/Users/tristanreynolds/Code/games/rougelite/include/Entity -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o -c /Users/tristanreynolds/Code/games/rougelite/src/Entity/Entity.cpp",
-  "file": "/Users/tristanreynolds/Code/games/rougelite/src/Entity/Entity.cpp",
+  "directory": "/home/teejarr/Code/games/Rougelite/out/Debug",
+  "command": "/usr/bin/c++  -I/home/teejarr/Code/games/Rougelite/src -I/home/teejarr/Code/games/Rougelite/include -I/home/teejarr/Code/games/Rougelite/include/Entity -I/home/teejarr/Code/games/Rougelite/include/UI -g -std=gnu++17 -o CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o -c /home/teejarr/Code/games/Rougelite/src/Entity/Entity.cpp",
+  "file": "/home/teejarr/Code/games/Rougelite/src/Entity/Entity.cpp",
   "output": "CMakeFiles/Rougelite.dir/src/Entity/Entity.cpp.o"
 },
 {
-  "directory": "/Users/tristanreynolds/Code/games/rougelite/out/Debug",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/tristanreynolds/Code/games/rougelite/src -I/Users/tristanreynolds/Code/games/rougelite/include -I/Users/tristanreynolds/Code/games/rougelite/include/Entity -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o -c /Users/tristanreynolds/Code/games/rougelite/src/Entity/Player.cpp",
-  "file": "/Users/tristanreynolds/Code/games/rougelite/src/Entity/Player.cpp",
+  "directory": "/home/teejarr/Code/games/Rougelite/out/Debug",
+  "command": "/usr/bin/c++  -I/home/teejarr/Code/games/Rougelite/src -I/home/teejarr/Code/games/Rougelite/include -I/home/teejarr/Code/games/Rougelite/include/Entity -I/home/teejarr/Code/games/Rougelite/include/UI -g -std=gnu++17 -o CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o -c /home/teejarr/Code/games/Rougelite/src/Entity/Player.cpp",
+  "file": "/home/teejarr/Code/games/Rougelite/src/Entity/Player.cpp",
   "output": "CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.o"
 },
 {
-  "directory": "/Users/tristanreynolds/Code/games/rougelite/out/Debug",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/tristanreynolds/Code/games/rougelite/src -I/Users/tristanreynolds/Code/games/rougelite/include -I/Users/tristanreynolds/Code/games/rougelite/include/Entity -isystem /opt/homebrew/Cellar/raylib/5.5/include -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=15.1 -I/opt/homebrew/Cellar/raylib/5.5/include -o CMakeFiles/Rougelite.dir/src/main.cpp.o -c /Users/tristanreynolds/Code/games/rougelite/src/main.cpp",
-  "file": "/Users/tristanreynolds/Code/games/rougelite/src/main.cpp",
+  "directory": "/home/teejarr/Code/games/Rougelite/out/Debug",
+  "command": "/usr/bin/c++  -I/home/teejarr/Code/games/Rougelite/src -I/home/teejarr/Code/games/Rougelite/include -I/home/teejarr/Code/games/Rougelite/include/Entity -I/home/teejarr/Code/games/Rougelite/include/UI -g -std=gnu++17 -o CMakeFiles/Rougelite.dir/src/UI/Menubar.cpp.o -c /home/teejarr/Code/games/Rougelite/src/UI/Menubar.cpp",
+  "file": "/home/teejarr/Code/games/Rougelite/src/UI/Menubar.cpp",
+  "output": "CMakeFiles/Rougelite.dir/src/UI/Menubar.cpp.o"
+},
+{
+  "directory": "/home/teejarr/Code/games/Rougelite/out/Debug",
+  "command": "/usr/bin/c++  -I/home/teejarr/Code/games/Rougelite/src -I/home/teejarr/Code/games/Rougelite/include -I/home/teejarr/Code/games/Rougelite/include/Entity -I/home/teejarr/Code/games/Rougelite/include/UI -g -std=gnu++17 -o CMakeFiles/Rougelite.dir/src/main.cpp.o -c /home/teejarr/Code/games/Rougelite/src/main.cpp",
+  "file": "/home/teejarr/Code/games/Rougelite/src/main.cpp",
   "output": "CMakeFiles/Rougelite.dir/src/main.cpp.o"
 }
 ]

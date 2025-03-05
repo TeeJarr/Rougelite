@@ -48,27 +48,47 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/tristanreynolds/Code/games/rougelite
+CMAKE_SOURCE_DIR = /home/teejarr/Code/games/Rougelite
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/tristanreynolds/Code/games/rougelite/out/Debug
+CMAKE_BINARY_DIR = /home/teejarr/Code/games/Rougelite/out/Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	/usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/teejarr/Code/games/Rougelite/out/Debug/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/opt/homebrew/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +98,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/opt/homebrew/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,16 +107,16 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles /Users/tristanreynolds/Code/games/rougelite/out/Debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/teejarr/Code/games/Rougelite/out/Debug/CMakeFiles /home/teejarr/Code/games/Rougelite/out/Debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/teejarr/Code/games/Rougelite/out/Debug/CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles /Users/tristanreynolds/Code/games/rougelite/out/Debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/teejarr/Code/games/Rougelite/out/Debug/CMakeFiles /home/teejarr/Code/games/Rougelite/out/Debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/tristanreynolds/Code/games/rougelite/out/Debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/teejarr/Code/games/Rougelite/out/Debug/CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
@@ -208,6 +228,30 @@ src/Entity/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/src/Entity/Player.cpp.s
 .PHONY : src/Entity/Player.cpp.s
 
+src/UI/Menubar.o: src/UI/Menubar.cpp.o
+.PHONY : src/UI/Menubar.o
+
+# target to build an object file
+src/UI/Menubar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/src/UI/Menubar.cpp.o
+.PHONY : src/UI/Menubar.cpp.o
+
+src/UI/Menubar.i: src/UI/Menubar.cpp.i
+.PHONY : src/UI/Menubar.i
+
+# target to preprocess a source file
+src/UI/Menubar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/src/UI/Menubar.cpp.i
+.PHONY : src/UI/Menubar.cpp.i
+
+src/UI/Menubar.s: src/UI/Menubar.cpp.s
+.PHONY : src/UI/Menubar.s
+
+# target to generate assembly for a file
+src/UI/Menubar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Rougelite.dir/build.make CMakeFiles/Rougelite.dir/src/UI/Menubar.cpp.s
+.PHONY : src/UI/Menubar.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -240,6 +284,8 @@ help:
 	@echo "... depend"
 	@echo "... codegen"
 	@echo "... edit_cache"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... Rougelite"
 	@echo "... src/Entity/Block.o"
@@ -251,6 +297,9 @@ help:
 	@echo "... src/Entity/Player.o"
 	@echo "... src/Entity/Player.i"
 	@echo "... src/Entity/Player.s"
+	@echo "... src/UI/Menubar.o"
+	@echo "... src/UI/Menubar.i"
+	@echo "... src/UI/Menubar.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

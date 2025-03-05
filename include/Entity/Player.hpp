@@ -2,6 +2,7 @@
 #include "Config.hpp"
 #include "Entity.hpp"
 #include "raylib.h"
+#include <vector>
 #pragma once
 
 class Player : public Entity
